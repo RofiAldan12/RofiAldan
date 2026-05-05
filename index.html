@@ -317,6 +317,9 @@
             cursor: pointer;
             background: var(--white);
             box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
 
         .project-card:hover {
@@ -367,6 +370,9 @@
         .project-content {
             padding: 2rem;
             background: var(--white);
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
         }
 
         .project-title {
@@ -403,6 +409,7 @@
             display: flex;
             gap: 1rem;
             align-items: stretch;
+            margin-top: auto;
         }
 
         .project-link {
@@ -688,6 +695,10 @@
                     <div class="skill-icon"><i class="fab fa-laravel"></i></div>
                     <h4>Laravel</h4>
                 </div>
+                <div class="skill-item fade-in">
+                    <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h4>Flutter</h4>
+                </div>
                 
                 
                 <div class="skill-item fade-in">
@@ -726,7 +737,7 @@
             <h2 class="section-title slide-right">Proyek Terbaru</h2>
             <div class="projects-grid">
                 <div class="project-card glass-card fade-in">
-                    <div class="project-image">
+                    <div class="project-image" onclick="openLightbox(this.querySelector('img'))">
                         <img src="img/we.png" alt="Siduma" class="project-thumbnail">
                         <div class="project-overlay">
                             <i class="fas fa-search-plus" style="color: white; font-size: 2rem;"></i>
@@ -751,7 +762,31 @@
                 </div>
 
                 <div class="project-card glass-card fade-in">
-                    <div class="project-image">
+                    <div class="project-image" onclick="openLightbox(this.querySelector('img'))">
+                        <img src="img/ayo.png" alt="Sistem Surat" class="project-thumbnail">
+                        <div class="project-overlay">
+                            <i class="fas fa-search-plus" style="color: white; font-size: 2rem;"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ERP Ayo Integrasi</h3>
+                        <p class="project-description">
+                            Web untuk mengatur ERP Perusahaan.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Vue.Js</span>
+                            <span class="tech-tag">Laravel</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://integrasi.ayosatu.id/" target="_blank" class="project-link link-primary">
+                                <i class="fas fa-folder-open"></i> Kunjungi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card fade-in">
+                    <div class="project-image" onclick="openLightbox(this.querySelector('img'))">
                         <img src="img/ao.png" alt="Sistem Surat" class="project-thumbnail">
                         <div class="project-overlay">
                             <i class="fas fa-search-plus" style="color: white; font-size: 2rem;"></i>
@@ -776,7 +811,7 @@
                 </div>
 
                 <div class="project-card glass-card fade-in">
-                    <div class="project-image">
+                    <div class="project-image" onclick="openLightbox(this.querySelector('img'))">
                         <img src="img/SIAKAD.jpeg" alt="Siakad" class="project-thumbnail">
                         <div class="project-overlay">
                             <i class="fas fa-search-plus" style="color: white; font-size: 2rem;"></i>
@@ -793,15 +828,15 @@
                             <span class="tech-tag">Android</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://drive.google.com/file/d/1wq9O6pMftmZOx8mzMNN3SacmdZnnEUe0/view?usp=drivesdk" target="_blank" class="project-link link-primary">
-                                <i class="fas fa-download"></i> Download
+                            <a href="https://play.google.com/store/apps/details?id=ac.lp3i.siakad&hl=id" target="_blank" class="project-link link-primary">
+                                <i class="fas fa-download"></i> Playstore
                             </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card glass-card fade-in">
-                    <div class="project-image">
+                    <div class="project-image" onclick="openLightbox(this.querySelector('img'))">
                         <img src="img/APK_UMKM.jpeg" alt="UMKM App" class="project-thumbnail">
                         <div class="project-overlay">
                             <i class="fas fa-search-plus" style="color: white; font-size: 2rem;"></i>
@@ -841,11 +876,11 @@
                         <i class="fas fa-envelope"></i>
                         <span>Email</span>
                     </a>
-                    <a href="https://drive.google.com/file/d/1BRM_XaXTb7151vHcz6ebe6umBsVDnbPo/view?usp=drive_link" target="_blank" class="contact-link">
+                    <a href="https://drive.google.com/file/d/1AZadfdrKiHeIqKf95Lt1bJVF2L_apxWe/view?usp=drive_link" target="_blank" class="contact-link">
                         <i class="fas fa-file-alt"></i>
                         <span>CV</span>
                     </a>
-                    <a href="https://github.com/Krisjar12" target="_blank" class="contact-link">
+                    <a href="https://github.com/RofiAldan12" target="_blank" class="contact-link">
                         <i class="fab fa-github"></i>
                         <span>GitHub</span>
                     </a>
